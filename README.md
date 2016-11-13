@@ -24,6 +24,9 @@ installed in its prescribed directory and configured automatically. </p>
 Remove .gitkeep files from Data and mp3 folders and now you are ready to go</p>
 <p> Place the .txt files you need to convert into Data directory, it can be any no. of files, Now launch API.py to convert Text to speech
 and the generated output will be placed automatically inside mp3 directory.</p>
+<h2> No Over-write permission:</h2>
+<p> BatchTTS library dosen't have overwrite permission, So once the job is done, Remove the .txt files from Data directory so it wont't be subjected for parsing again and again</p>
+<p> Copy the contents of mp3 directory inorder to avoid overwriting in case old files are present in Data Directory, This happens because same file name is used but with .mp3 extension again and again</p>
 <h5>Using BatchTTS as Library</h5>
 <p>Clone the project and Modify the API.py to use it as a library</p>
 <p> Use from BatchTTS import API to use API
