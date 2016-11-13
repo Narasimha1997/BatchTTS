@@ -16,5 +16,18 @@ installed in its prescribed directory and configured automatically. </p>
 <p> BatchTTS uses PIP to download gTTS if its not present, if it fails, Download gTTS manually and configure it</p>
 <p> If installer fails to install Install_Zip.zip file, Then manually extract it inside Python directory </p>
 <p> Working internet connection for installation and to interact with Google TTS engine</p>
+<h3>Important Note:</h3>
+<p>Remove .gitkeep files from mp3 and Data directories before using it </p>
 
+<h4>How to use: </h4>
+<p> Clone the project and run API.py file, It automatiaclly checks the installation for the first time and downloads the required packages
+Remove .gitkeep files from Data and mp3 folders and now you are ready to go</p>
+<p> Place the .txt files you need to convert into Data directory, it can be any no. of files, Now launch API.py to convert Text to speech
+and the generated output will be placed automatically inside mp3 directory.</p>
+<h5>Using BatchTTS as Library</h5>
+<p>Clone the project and Modify the API.py to use it as a library</p>
+<p> Use from BatchTTS import API to use API
+<p> Your application should place the .txt files inside Data folder programatically then it should call API.py to use TTS</p>
+<h6> Disabling the library </h6>
+<p> You can notice __CALLS.txt inside IO Directory the content is run gtts by default, Remove it and leave the file empty </p>
 <p> Created by: Narasimha Prasanna HN</p>
