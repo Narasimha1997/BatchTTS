@@ -9,15 +9,15 @@ def handle_calls(__CALL_STRING):
         Speech_Engine.gTTS_Core('en')
 
     pass
+def call_api():
+   flag=open("Python\\Flag.txt", "r")
+   flag_data=flag.read()
+   if flag_data=="1":
+      from Python.Installer_Zip import Speech_Engine
 
-flag=open("Python\\Flag.txt", "r")
-flag_data=flag.read()
-if flag_data=="1":
-    from Python.Installer_Zip import Speech_Engine
-
-    CALL=open(__CALL_FILE_PATH,"r")
-    handle_calls(CALL.read())
-else: install.installer_main()
+      CALL=open(__CALL_FILE_PATH,"r")
+      handle_calls(CALL.read())
+   else: install.installer_main()
 #This API is used to interact Speech_Engine with External tools
 #Can be called by JavaScript, php or Node.js
 
